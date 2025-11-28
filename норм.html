@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека+</title>
+    <link rel="stylesheet" href="норм.css">
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+  <img class="div" src="фото к норм/фон.png" />
+
+  <img class="frame-1" src="фото к норм/какаятоштукасверху.png" />
+
+<div class="librery">
+  <div class="bibli">
+      <a href="">Библиотека+</a></div>
+</div>
+
+    <div class="ee">
+  <img class="logo" src="фото к норм/логотип.png" />
+    </div>
+
+
+    <div class="aaaa">
+        <a href="">
+    <img class="pr" src="фото к норм/профиль.png" />
+        </a>
+    </div>
+
+
+    <div class="bokok1" id="wqw">
+        <a href="">
+    <img class="kniga1" src="фото к норм/книга1.png" />
+        </a>
+
+        <a href="https://www.litres.ru/book/stiven-king/hudeuschiy-72105184/">
+    <img class="kniga2" src="фото к норм/книга2.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga3" src="фото к норм/книга3.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga4" src="фото к норм/книга4.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga5" src="фото к норм/книга5.png" />
+        </a>
+    </div>
+
+
+
+
+    <div class="bokok2">
+        <a href="">
+    <img class="kniga6" src="фото к норм/книга6.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga7" src="фото к норм/книга7.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga8" src="фото к норм/книга8.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga9" src="фото к норм/книга9.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga10" src="фото к норм/книга10.png" />
+        </a>
+
+    </div>
+
+
+     <div class="bokok3">
+        <a href="">
+    <img class="kniga11" src="фото к норм/книга11.png" />
+        </a>
+
+         <a href="">
+    <img class="kniga12" src="фото к норм/книга12.png" />
+        </a>
+
+          <a href="">
+    <img class="kniga13" src="фото к норм/книга13.png" />
+        </a>
+
+          <a href="">
+    <img class="kniga14" src="фото к норм/книга14.png" />
+        </a>
+
+          <a href="">
+    <img class="kniga15" src="фото к норм/книга15.png" />
+        </a>
+
+    </div>
+
+    <div class="bokok4">
+        <a href="">
+    <img class="kniga16" src="фото к норм/книга16.png" />
+        </a>
+
+         <a href="">
+    <img class="kniga17" src="фото к норм/книга17.png" />
+        </a>
+
+          <a href="">
+    <img class="kniga18" src="фото к норм/книга18.png" />
+        </a>
+
+          <a href="">
+    <img class="kniga19" src="фото к норм/книга19.png" />
+        </a>
+
+          <a href="">
+    <img class="kniga20" src="фото к норм/книга20.png" />
+        </a>
+
+    </div>
+
+    <div class="bokok5">
+        <a href="">
+    <img class="kniga21" src="фото к норм/книга21.png" />
+        </a>
+        <a href="">
+    <img class="kniga22" src="фото к норм/книга22.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga23" src="фото к норм/книга23.png" />
+        </a>
+        <a href="">
+    <img class="kniga24" src="фото к норм/книга24.png" />
+        </a>
+        <a href="">
+    <img class="kniga25" src="фото к норм/книга25.png" />
+        </a>
+    </div>
+
+    <div class="bokok6">
+        <a href="">
+    <img class="kniga26" src="фото к норм/книга26.png" />
+        </a>
+        <a href="">
+    <img class="kniga27" src="фото к норм/книга27.png" />
+        </a>
+
+        <a href="">
+    <img class="kniga28" src="фото к норм/книга28.png" />
+        </a>
+        <a href="">
+    <img class="kniga29" src="фото к норм/книга29.png" />
+        </a>
+        <a href="">
+    <img class="kniga30" src="фото к норм/книга30.png" />
+        </a>
+    </div>
+
+
+
+
+
+
+  <div class="conta">
+    <div class="search-container">
+            <input type="text" class="search-input" placeholder="Поиск" id="searchInput">
+            <button class="search-button" onclick="performSearch()">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+            </button>
+    </div>
+  </div>
+
+
+
+    <script>
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value;
+            if (searchTerm.trim() !== '') {
+                alert('Выполняется поиск: ' + searchTerm);
+                // Здесь можно добавить реальную логику поиска
+                // Например: window.location.href = '/search?q=' + encodeURIComponent(searchTerm);
+            } else {
+                alert('Введите поисковый запрос');
+            }
+        }
+
+
+        document.getElementById('searchInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+    </script>
+
+    <div class="samsa">
+        <a href="">
+        <img class="sa" src="фото к норм/vjbrybub.png" />
+        </a>
+    </div>
+
+    <div class="rjhrf">
+        <a href="">
+        <img class="rj" src="фото к норм/корзина.png" />
+        </a>
+    </div>
+
+    <div class="qq">
+        <a href="javascript:void(0)" onclick="toggleCatalog()">
+        <img class="polygon-1" src="фото к норм/Polygon 1.png" />
+      <div class="qwq">Каталог</div>
+        </a>
+        <a href="">
+      <div class="wqw">Новинки</div>
+        </a>
+        <a href="">
+      <div class="aqa">Популярное</div>
+        </a>
+        <a href="">
+      <div class="exp">Эксклюзив</div>
+        </a>
+        <a href="">
+      <div class="qwerty">Подборки</div>
+        </a>
+        <a href="">
+      <div class="qaz">Черновики</div>
+        </a>
+        <a href="">
+      <div class="wsx">Сертификаты</div>
+        </a>
+        <a href="javascript:void(0)" onclick="toggleMore()">
+    <img class="polygon-2" src="фото к норм/Polygon 1.png" />
+    <div class="edc">Еще</div>
+</a>
+    </div>
+
+
+    <div id="moreWindow">
+    <ul>
+        <li>Партнерская программа</li>
+        <li>Стать автором</li>
+        <li>Детская литература</li>
+        <li>Фанфики</li>
+        <li>Абонемент</li>
+        <li>Реклама для бизнеса</li>
+        <li>Подкасты</li>
+        <li>Корпоративная библиотека</li>
+        <li>Издать свою книгу</li>
+        <li>Мобильные приложения</li>
+    </ul>
+</div>
+
+<script>
+function toggleCatalog() {
+    const overlay = document.getElementById("overlay");
+    const catalog = document.getElementById("catalogWindow");
+
+    const isOpen = catalog.classList.contains("open");
+
+    if (isOpen) {
+        catalog.classList.remove("open");
+        overlay.classList.remove("show");
+
+        document.querySelectorAll('.submenu').forEach(submenu => {
+            submenu.classList.remove('show');
+        });
+    } else {
+        catalog.classList.add("open");
+        overlay.classList.add("show");
+    }
+}
+
+function toggleMore() {
+    const overlay = document.getElementById("overlay");
+    const more = document.getElementById("moreWindow");
+
+    const isOpen = more.classList.contains("open");
+
+    if (isOpen) {
+        more.classList.remove("open");
+        overlay.classList.remove("show");
+    } else {
+        more.classList.add("open");
+        overlay.classList.add("show");
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuItems.forEach(item => {
+        const submenu = item.querySelector('.submenu');
+
+        item.addEventListener('mouseenter', function() {
+
+            document.querySelectorAll('.submenu').forEach(sm => {
+                sm.classList.remove('show');
+            });
+
+            submenu.classList.add('show');
+        });
+
+        item.addEventListener('mouseleave', function(e) {
+
+            const relatedTarget = e.relatedTarget;
+            if (!submenu.contains(relatedTarget)) {
+                setTimeout(() => {
+                    if (!submenu.matches(':hover') && !item.matches(':hover')) {
+                        submenu.classList.remove('show');
+                    }
+                }, 100);
+            }
+        });
+
+        submenu.addEventListener('mouseleave', function() {
+            submenu.classList.remove('show');
+        });
+    });
+
+
+    document.getElementById('overlay').addEventListener('click', function() {
+        document.querySelectorAll('.submenu').forEach(submenu => {
+            submenu.classList.remove('show');
+        });
+
+        // Закрываем окна при клике на оверлей
+        document.getElementById('catalogWindow').classList.remove('open');
+        document.getElementById('moreWindow').classList.remove('open');
+        this.classList.remove('show');
+    });
+});
+</script>
+
+
+<div id="overlay"></div>
+
+
+<div id="catalogWindow">
+    <ul>
+        <li class="menu-item" data-submenu="genre">
+            <span>Жанр</span>
+            <div class="submenu" id="genreSubmenu">
+                <ul>
+                    <li>Классика</li>
+                    <li>Боевик</li>
+                    <li>Роман</li>
+                    <li>Фантастика</li>
+                    <li>Новелла</li>
+                    <li>Повесть</li>
+                    <li>Комедия</li>
+                    <li>Трагедия</li>
+                    <li>Детектив</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="menu-item" data-submenu="alphabet">
+            <span>Произведения по алфавиту</span>
+            <div class="submenu" id="alphabetSubmenu">
+                <ul>
+                    <li>От А до Я</li>
+                    <li>От Я до А</li>
+                    <li>Зарубежные</li>
+                    <li>Российские</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="menu-item" data-submenu="author">
+            <span>Автор/писатель</span>
+            <div class="submenu" id="authorSubmenu">
+                <ul>
+                    <li>Зарубежные авторы</li>
+                    <li>Российские авторы</li>
+                    <li>По популярности</li>
+                    <li>По алфавиту</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="menu-item" data-submenu="year">
+            <span>Год</span>
+            <div class="submenu" id="yearSubmenu">
+                <ul>
+                    <li>XXI (21 век)</li>
+                    <li>XX (20 век)</li>
+                    <li>XIX (19 век)</li>
+                    <li>XVIII (18 век)</li>
+                    <li>XVII (17 век)</li>
+                    <li>XVI (16 век)</li>
+                    <li>XV (15 век)</li>
+                    <li>Золотой век</li>
+                    <li>Серебряный век</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="menu-item" data-submenu="age">
+            <span>Возрастное ограничение</span>
+            <div class="submenu" id="ageSubmenu">
+                <ul>
+                    <li>0+</li>
+                    <li>3+</li>
+                    <li>6+</li>
+                    <li>12+</li>
+                    <li>16+</li>
+                    <li>18+</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="menu-item" data-submenu="country">
+            <span>Страна</span>
+            <div class="submenu" id="countrySubmenu">
+                <ul>
+                    <li>Россия</li>
+                    <li>Америка</li>
+                    <li>Китай</li>
+                    <li>Франция</li>
+                    <li>Корея</li>
+                    <li>Германия</li>
+                    <li>Великобритания</li>
+                    <li>Япония</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="menu-item" data-submenu="science">
+            <span>Знания и наука</span>
+            <div class="submenu" id="scienceSubmenu">
+                <ul>
+                    <li>Научная литература</li>
+                    <li>Образовательные</li>
+                    <li>Учебные пособия</li>
+                    <li>Научпоп</li>
+                    <li>Техническая литература</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+function toggleCatalog() {
+    const overlay = document.getElementById("overlay");
+    const catalog = document.getElementById("catalogWindow");
+
+    const isOpen = catalog.classList.contains("open");
+
+    if (isOpen) {
+        catalog.classList.remove("open");
+        overlay.classList.remove("show");
+
+        document.querySelectorAll('.submenu').forEach(submenu => {
+            submenu.classList.remove('show');
+        });
+    } else {
+        catalog.classList.add("open");
+        overlay.classList.add("show");
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuItems.forEach(item => {
+        const submenu = item.querySelector('.submenu');
+
+        item.addEventListener('mouseenter', function() {
+
+            document.querySelectorAll('.submenu').forEach(sm => {
+                sm.classList.remove('show');
+            });
+
+            submenu.classList.add('show');
+        });
+
+        item.addEventListener('mouseleave', function(e) {
+
+            const relatedTarget = e.relatedTarget;
+            if (!submenu.contains(relatedTarget)) {
+                setTimeout(() => {
+                    if (!submenu.matches(':hover') && !item.matches(':hover')) {
+                        submenu.classList.remove('show');
+                    }
+                }, 100);
+            }
+        });
+
+        submenu.addEventListener('mouseleave', function() {
+            submenu.classList.remove('show');
+        });
+    });
+
+
+    document.getElementById('overlay').addEventListener('click', function() {
+        document.querySelectorAll('.submenu').forEach(submenu => {
+            submenu.classList.remove('show');
+        });
+    });
+});
+</script>
+
+    <img class="rika" src="фото к норм/реклама (2).png" />
+
+    <div class="b0ttle">
+        <img class="n00me" src="фото к норм/имена новинки популярное и тд.png" />
+    </div>
+
+    <img class="asa" src="фото к норм/подвал.png" />
+
+    <img class="ссс" src="фото к норм/спонсоры.png" />
+
+    <img class="biger" src="фото к норм/большаярекламка.png" />
+
+
+</div>
+
+
+
+</body>
+</html>
